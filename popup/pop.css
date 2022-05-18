@@ -1,0 +1,94 @@
+:root {
+    font-family: 'Open Sans', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: var( --font-family);
+    background-color: black;
+}
+
+.main-container {
+    background-color: whitesmoke;
+    width: 25%;
+    height: 250px;
+    text-align: center;
+    padding: 20px 60px 0;
+    border-radius: 15px;
+    box-shadow: 5px 2px 13px -1px darkslategrey;
+    display: none;
+}
+
+.text-container {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-top: 5px;
+    font-weight: bold;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+
+input[type="email"] {
+    margin-top: 20px;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 8px 48px 8px;
+    /* width: 250px;
+    height: 30px; */
+}
+
+input[type="email"]::placeholder {
+    color: black;
+}
+
+#btn1 {
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    padding: 10px 90px 10px;
+    outline: none;
+    border-radius: 25px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#no-thanks {
+    padding: 20px;
+    cursor: pointer;
+}
+
+@media (min-width:768px) and (max-width:1250px) {
+    .main-container {
+        width: 50%;
+    }
+}
+
+@media (max-width:767px) {
+    .main-container {
+        width: 80%;
+    }
+    input[type="email"] {
+        padding: 10px;
+    }
+    #get {
+        font-size: 20px;
+    }
+    #btn1 {
+        padding: 5px 45px 5px;
+    }
+    #no-thanks {
+        padding: 10px;
+    }
+}
